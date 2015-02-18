@@ -1,8 +1,155 @@
 
+.date {
+    position:relative;
+    overflow:auto;
+    margin-bottom:5em;
+    width:100%;
+    font-weight:500;
+    font-size: 0.8em;
+    letter-spacing: 0.2em;
+    color:rgba(255,255,255,0.7);
+}
+
+
+.date span {
+    position:relative;
+    display:block;
+    float:left;
+    width:33.33%;
+    text-align: center;
+    margin:0;
+}
+
+/*.date span:after {
+    content: '';
+    width:100%;
+    display:inline-block;
+}*/
+
+.date p {
+    font-size:1.2em;
+    text-transform:uppercase;
+}
+
+
+.date .day {
+    text-align:left;
+}
+
+.date .month-day {
+    text-align:center;
+}
+
+.date .time {
+    text-align: right;
+}
+
+.hed {
+    margin-top:6em;
+    height:200px;
+    margin-bottom:6em;
+}
+
+.hed img {
+    width:100%;
+}
+
+.hed h1 {display:none;}
+
+.performers {
+    margin-bottom:6em;
+}
+
+
+.performers ul {
+    display:block;
+    padding:0;
+    text-align: justify;
+    margin:0;
+} 
+.performers ul:after {
+  content: '';
+  width: 100%; /* Ensures there are at least 2 lines of text, so justification works */
+  display: inline-block;
+} 
+
+.performers li {
+    display:inline-block;
+    list-style: none;
+    padding:0;
+    margin:0;
+    font-size: 1.6em;
+    letter-spacing: 0.05em;
+    font-weight:400;
+    text-decoration: underline;
+    text-shadow:1px 1px 6px rgb(0,0,0);
+}
+
+.cta {
+    margin-bottom:5em;
+    padding:1em;
+    overflow:auto;
+    background-color:rgba(0,0,0,0.3);
+}
+
+input {
+    background-color:rgba(0,0,0,0.35);
+    border:0;
+    /*border-bottom:1px solid rgba(0,0,0,0.9);*/
+    outline:0;
+    padding:0;
+    width:25%;
+    float:left;
+    padding-top:1em;
+    padding-bottom:10px;
+    padding-left:10px;
+    box-sizing:border-box;
+    color:white;
+    font-weight: 500;
+}
+
+input[type=submit] {
+    background-color:rgba(7,0,214,0.9);
+    font-weight: 800;
+    letter-spacing: 0.1em;
+}
+
+input:active, input:focus {
+    background-color:rgba(0,0,0,0.8);
+}
+
+.dek {
+    display:none;
+}
+
+.hosts {
+    text-transform: lowercase;
+    weight:600;
+    text-decoration: underline;
+    font-size: 1.3em;
+}
+
+.hosts strong {
+    text-decoration: none;
+}
+
+.location {
+    text-align: center;
+}
+
+#landing_page {
+    /*display:none;*/
+    width:50vw;
+    /*background:rgba(0,0,0,0.7);*/
+    margin:0 auto;
+    padding:2em;
+    padding-top:4em;
+}
+
 video#bgvid { 
+    opacity: 0.5;
     position: fixed; right: 0; bottom: 0; 
     min-width: 100%; min-height: 100%; 
-    opacity:0.9;
     width: auto; height: auto; z-index: -100; 
 /*  background: url(LRAD-Exploration-04.jpg) no-repeat; */
     background-size: cover; 
@@ -19,10 +166,19 @@ video#bgvid {
    ========================================================================== */
 
 html {
-    color: #222;
+    color: white;
     font-size: 1em;
+    padding:0;
     line-height: 1.4;
-    background-color:lightblue;
+    background-color:black;
+}
+
+body {
+    padding:0;
+    margin:0;    
+   font-family:  "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-weight: 300;
+
 }
 
 /*
