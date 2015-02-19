@@ -41,13 +41,36 @@
       </div><!-- /hed -->
 
       <div class="performers">
-        <ul>
-          <li>Abby Fiscus</li>
-          <li>STUD1NT</li>
-          <li>Geng</li>
-          <li>Ciarra Black</li>
-          <li>Quaco</li>
-        </ul>
+          
+          <div id="tabs">
+  <ul>
+    <li><a href="#tabs-1">Abby Fiscus</a></li>
+    <li><a href="#tabs-2">STUD1NT</a></li>
+    <li><a href="#tabs-3">Geng</a></li>
+    <li><a href="#tabs-4">Ciarra Black</a></li>
+    <li><a href="#tabs-3">Quaco</a></li>     
+  </ul>
+  <div id="tabs-1">
+    
+    <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci.</p>
+  </div>
+  <div id="tabs-2">
+   
+    <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. </p>
+  </div>
+  <div id="tabs-3">
+   
+    <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. .</p>
+  </div>
+              
+     <div id="tabs-4">
+   
+    <p> Ciarra Black is a Brooklyn based DJ and producer with an emphasis on outsider techno, noise and experimental electronics. Ciarra has DJ'd and performed within the Discwoman collective, is co-founder and a resident DJ of the monthly event No-Tech and performs as 1/2 of the band Appetite</p>
+  </div>          
+             
+</div>
+          
+       
       </div>
 
       <div class="cta">
@@ -92,11 +115,22 @@
       </div><!-- /dek -->
 
       <div class="hosts">
-        <p><strong>hosts</strong> Mask Magazine, Desiring Machines Soundsystem, Can't touch this NYC</p>
+        <p><strong>Hosts:</strong> Mask Magazine, Desiring Machines Soundsystem, Can't touch this NYC</p>
       </div>
       
       <div class="location">
         <p> All Gold at the PS.1 Print shop <br /> 22-21 Jackson ave, L.I.C NY</p>
+      </div>
+        <div class="location desc">
+        <p> 
+            LRAD is a collaboration between Mask Magazine and DesiringMachine Soundsystem. LRAD is a dance party. But more than that, it is an experiment in collective madness. A space for us who feel that all imaginable ways of existing are deemed virtually impossible by the idiosyncrasies of the world unfolding around us. And it is an acknowledgement that the recognition of such impossibility is something
+        </p>
+        <p>
+The LRAD cannon is a “less lethal weapon” used by army and police against protesters around the world. Recently, it made it’s NYC debut during the Eric Garner protests. The LRAD sends focused, high-decibel sounds and sirens at deafening levels in an attempt to confuse and intimidate.
+        </p>
+        <p>
+LRAD is an attempt to envision a sonic weapon of our own.
+        </p>
       </div>
 
     </div><!-- /landing_page -->
@@ -105,12 +139,20 @@
     <video autoplay loop poster="" id="bgvid">
     <source src="media/background_media.mp4" type="video/mp4">
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/{{JQUERY_VERSION}}/jquery.min.js"></script>
-
+<!--    <script src="//ajax.googleapis.com/ajax/libs/jquery/{{JQUERY_VERSION}}/jquery.min.js"></script>-->
+     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.3/jquery-ui.js"></script>   
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')</script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-
+<script>
+  $(function() {
+    $( "#tabs" ).tabs({
+      collapsible: true,
+        active: false
+    });
+  });
+  </script>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
