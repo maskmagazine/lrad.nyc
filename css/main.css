@@ -1,4 +1,12 @@
 
+   a,
+    a:visited {
+         color: white;
+text-decoration: none;
+    }
+
+    
+
 .date {
     position:relative;
     overflow:auto;
@@ -45,9 +53,9 @@
 }
 
 .hed {
-    margin-top:6em;
-    height:200px;
-    margin-bottom:6em;
+    margin-top:5em;
+/*    height:200px;*/
+    margin-bottom: 10vw;
 }
 
 .hed img {
@@ -57,7 +65,7 @@
 .hed h1 {display:none;}
 
 .performers {
-    margin-bottom:6em;
+    margin-bottom:5em;
 }
 
 
@@ -81,7 +89,7 @@
     font-size: 1.6em;
     letter-spacing: 0.05em;
     font-weight:400;
-    text-decoration: underline;
+    border-bottom: 2px solid #FFF;
     text-shadow:1px 1px 6px rgb(0,0,0);
 }
 
@@ -124,9 +132,10 @@ input:active, input:focus {
 
 .hosts {
     text-transform: lowercase;
-    weight:600;
+    font-weight:600;
     text-decoration: underline;
     font-size: 1.3em;
+    text-align: center;
 }
 
 .hosts strong {
@@ -136,13 +145,16 @@ input:active, input:focus {
 .location {
     text-align: center;
 }
+.desc {
+	padding: 3em;
+}
 
 #landing_page {
     /*display:none;*/
-    width:50vw;
+    width: 70vw;
     /*background:rgba(0,0,0,0.7);*/
     margin:0 auto;
-    padding:2em;
+    padding: 0em;
     padding-top:4em;
 }
 
@@ -153,6 +165,10 @@ video#bgvid {
     width: auto; height: auto; z-index: -100; 
 /*  background: url(LRAD-Exploration-04.jpg) no-repeat; */
     background-size: cover; 
+}
+
+.ui-tabs-panel {
+display: none;
 }
 
 /*
