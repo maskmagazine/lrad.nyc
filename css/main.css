@@ -4,6 +4,11 @@
          color: white;
 text-decoration: none;
     }
+a:active, a:hover {
+
+text-shadow: none;
+
+}
 
     
 
@@ -55,7 +60,7 @@ text-decoration: none;
 .hed {
     margin-top:5em;
 /*    height:200px;*/
-    margin-bottom: 10vw;
+    margin-bottom: 6vw;
 }
 
 .hed img {
@@ -89,51 +94,69 @@ text-decoration: none;
     font-size: 1.6em;
     letter-spacing: 0.05em;
     font-weight:400;
-    border-bottom: 2px solid #FFF;
+border-bottom: 2px solid transparent;
     text-shadow:1px 1px 6px rgb(0,0,0);
 }
-
+.performers li:hover {
+border-bottom: 2px solid #CFCCCC;
+}
 .cta {
-    margin-bottom:5em;
-    padding:1em;
+    margin-bottom: 7em;
+   
     overflow:auto;
-    background-color:rgba(0,0,0,0.3);
+    /* background-color: rgba(0, 0, 0, 0.42); */
 }
 
 input {
-    background-color:rgba(0,0,0,0.35);
+    background-color: rgba(255, 252, 252, 0);
     border:0;
-    /*border-bottom:1px solid rgba(0,0,0,0.9);*/
+    border-bottom: 1px solid rgba(173, 174, 196, 1);
     outline:0;
     padding:0;
-    width:25%;
+    width: 24%;
     float:left;
     padding-top:1em;
     padding-bottom:10px;
-    padding-left:10px;
+    padding-left: 2px;
     box-sizing:border-box;
     color:white;
     font-weight: 500;
+   margin-left: 1.3%;
 }
 
 input[type=submit] {
-    background-color:rgba(7,0,214,0.9);
+    background-color: rgba(30, 35, 77, 0.8);
     font-weight: 800;
     letter-spacing: 0.1em;
+    border: 0px;
+    padding-bottom: 12px;
+    /* font-size: 2.3em; */
+    /* border: 1px solid #B6A9A9; */
+}
+#mce-EMAIL {
+    margin-left: 0px;
 }
 
 input:active, input:focus {
-    background-color:rgba(0,0,0,0.8);
+/*    background-color:rgba(0,0,0,0.8);*/
 }
+
+#mce-LNAME::-webkit-input-placeholder {
+ color: white !important;   
+}
+
+ input::-webkit-input-placeholder {
+    color: white;
+} 
 
 .dek {
     display:none;
 }
 
 .hosts {
-    text-transform: lowercase;
+    /* text-transform: lowercase; */
     font-weight:600;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     font-size: 1.3em;
     text-align: center;
 }
@@ -146,7 +169,7 @@ input:active, input:focus {
     text-align: center;
 }
 .desc {
-	padding: 3em;
+	padding-top: 4em;
 }
 
 #landing_page {
@@ -391,6 +414,12 @@ textarea {
    http://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
 
+@media only screen and (max-width: 768px) {
+    input {
+        width: 100%;
+        margin: 0px;
+    }
+}
 @media print {
     *,
     *:before,
