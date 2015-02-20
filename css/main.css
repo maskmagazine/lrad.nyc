@@ -1,158 +1,276 @@
 
-.date {
-    position:relative;
-    overflow:auto;
-    margin-bottom:5em;
-    width:100%;
-    font-weight:500;
-    font-size: 0.8em;
-    letter-spacing: 0.2em;
-    color:rgba(255,255,255,0.7);
+@font-face {
+  font-family: 'fugue';
+  src: url('../fonts/fugue_regular.otf?') format('opentype');
 }
 
-
-.date span {
-    position:relative;
-    display:block;
-    float:left;
-    width:33.33%;
-    text-align: center;
-    margin:0;
+@font-face {
+  font-family: 'fugue_italic';
+  src: url('../fonts/fugue_italic.otf?') format('opentype');
 }
 
-/*.date span:after {
-    content: '';
-    width:100%;
-    display:inline-block;
-}*/
-
-.date p {
-    font-size:1.2em;
-    text-transform:uppercase;
+@font-face {
+  font-family: 'fugue_head';
+  src: url('../fonts/fugue_head.otf?') format('opentype');
 }
 
-
-.date .day {
-    text-align:left;
+@font-face {
+  font-family: 'fugue_mono';
+  src: url('../fonts/fugue_mono.otf?') format('opentype');
 }
 
-.date .month-day {
-    text-align:center;
-}
-
-.date .time {
-    text-align: right;
-}
-
-.hed {
-    margin-top:6em;
-    height:200px;
-    margin-bottom:6em;
-}
-
-.hed img {
-    width:100%;
-}
-
-.hed h1 {display:none;}
-
-.performers {
-    margin-bottom:6em;
-}
-
-
-.performers ul {
-    display:block;
-    padding:0;
-    text-align: justify;
-    margin:0;
-} 
-.performers ul:after {
-  content: '';
-  width: 100%; /* Ensures there are at least 2 lines of text, so justification works */
-  display: inline-block;
-} 
-
-.performers li {
-    display:inline-block;
-    list-style: none;
-    padding:0;
-    margin:0;
-    font-size: 1.6em;
-    letter-spacing: 0.05em;
-    font-weight:400;
-    text-decoration: underline;
-    text-shadow:1px 1px 6px rgb(0,0,0);
-}
-
-.cta {
-    margin-bottom:5em;
-    padding:1em;
-    overflow:auto;
-    background-color:rgba(0,0,0,0.3);
-}
 
 input {
-    background-color:rgba(0,0,0,0.35);
-    border:0;
-    /*border-bottom:1px solid rgba(0,0,0,0.9);*/
-    outline:0;
-    padding:0;
-    width:25%;
-    float:left;
-    padding-top:1em;
-    padding-bottom:10px;
-    padding-left:10px;
-    box-sizing:border-box;
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
+
+@media only screen and (min-width: 320px) {
+    #landing_page {
+        /*display:none;*/
+        width:88vw;
+
+        /*background:rgba(0,0,0,0.7);*/
+        margin:0 auto;
+        padding:0;
+        padding-top:2em;
+        padding-bottom:6em;
+    }  
+
+    /* DATE */
+    .date {
+        position:relative;
+        overflow:auto;
+        margin-bottom:5em;
+        width:100%;
+        font-weight:500;
+        font-size: 0.5em;
+        letter-spacing: 0.2em;
+        color:rgba(255,255,255,0.7);
+    }
+    .date span {
+        position:relative;
+        display:block;
+        float:left;
+        width:33.33%;
+        text-align: center;
+        margin:0;
+    }
+    .date p {
+        text-transform:uppercase;
+    }
+    .date .day {
+        text-align:left;
+    }
+    .date .month-day {
+        text-align:center;
+    }
+    .date .time {
+        text-align: right;
+    }
+
+    /* HED */
+    .hed {
+        width:100%;
+        margin-top:3em;
+        margin-bottom:2em;
+        position:relative;
+    }
+    .hed svg {
+        position:relative;
+        opacity:0.8;
+        width:97vw;
+        margin-left:-4vw;
+    }
+    .hed h1 {display:none;}
+    .hed img {display:none;}
+    
+    /* DEK */
+    
+
+
+    /* PERFORMERS */
+    
+    .performers {
+        font-family: 'fugue';
+        font-size: 1em;
+        line-height: 2.1em;
+    }
+    .performers ul {
+        display:block;
+        padding:0;
+        text-align: center;
+        margin:0;
+    } 
+    .performers ul:after {
+      content: '';
+      width: 100%; /* Ensures there are at least 2 lines of text, so justification works */
+      display: inline-block;
+    } 
+    .performers li {
+        display:inline-block;
+        list-style: none;
+        padding:0;
+        padding-left:10px;
+        padding-right:10px;
+        margin:0;
+
+        letter-spacing: 0.1em;
+        opacity: 0.9;
+        font-weight:400;
+        /*text-decoration: underline;*/
+    }
+
+
+    /* CTA */
+    
+    .cta {
+        padding:0;
+        overflow:auto;
+        background-color:rgba(0,0,0,0.3);
+    }
+
+    input {
+        background-color:rgba(0,0,0,0.35);
+        border:0;
+        /*border-bottom:1px solid rgba(0,0,0,0.9);*/
+        outline:0;
+        padding:0;
+        margin:0;
+        width:25%;
+        float:left;
+        padding-top:10px;
+        padding-bottom:10px;
+        padding-left:10px;
+        font-size: 0.6em;
+        box-sizing:border-box;
+        color:white;
+        font-family: 'fugue_mono';
+        text-transform: uppercase;
+        font-weight: 500;
+
+    }
+
+    input[type=submit] {
+        background-color:rgba(7,0,214,0.9);
+        font-weight: 800;
+        letter-spacing: 0.1em;
+        text-align: center;
+        padding-left:10px;
+        padding-right:10px;
+        box-sizing:border-box;
+    }
+
+    input:active, input:focus {
+        background-color:rgba(0,0,0,0.8);
+    }
+
+    /* HOSTS */
+    .hosts {
+        margin:0 auto;
+        margin-top:4em;
+        margin-bottom:5em;
+        width:66%;
+        text-align: center;
+        font-family: 'fugue';
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        font-size: 0.8em;
+        line-height: 1.2em;
+    }
+    .hosts ul {padding:0;margin:0;}
+    .hosts li {
+        list-style: none;
+        margin:0;padding:0;
+    }
+    .hosts h2 {
+        opacity:0.8;
+        font-family: 'fugue_mono';
+        text-transform: uppercase;
+        font-size: 0.8em !important;
+        line-height: 1.2em;   
+        margin:0;
+        padding:0;
+    }
+
+
+    /* LOCATION */
+    .location {
+        font:0.5em/1.8em 'fugue_mono';
+        letter-spacing: 0.2em;
+        margin:0 auto;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 641px) {
+    #landing_page {
+        margin-top:4em;
+        width:70vw;
+    }
+    .date {font-size:0.9em;}
+    .hed svg {width:79vw;}
+    .performers {font-size: 1.6em;}
+    .performers li {padding-left:25px;padding-right:25px;}
+    .cta input {font-size: 0.8em;padding:;}
+    .hosts {margin-bottom:3em;}
+}
+
+@media only screen and (min-width: 822px) {
+    #landing_page {
+        width:60vw;
+    }
+
+    .hed svg {
+        width:68vw;
+    }
+}
+
+@media only screen and (min-width: 1081px) {
+    #landing_page {
+        width:50vw;
+    }
+
+    .hed svg {
+        width:57vw;
+    }
+}
+
+@media only screen and (min-width:1441px) {
+    #landing_page {
+        width:40vw;
+    }
+    .hed svg {
+        width:45vw;
+        margin-left:-2.2vw;
+    }
+}
+
+a, a:visited, a:active {
     color:white;
-    font-weight: 500;
-}
-
-input[type=submit] {
-    background-color:rgba(7,0,214,0.9);
-    font-weight: 800;
-    letter-spacing: 0.1em;
-}
-
-input:active, input:focus {
-    background-color:rgba(0,0,0,0.8);
+    text-decoration: none;
 }
 
 .dek {
     display:none;
 }
 
-.hosts {
-    text-transform: lowercase;
-    weight:600;
-    text-decoration: underline;
-    font-size: 1.3em;
-}
 
-.hosts strong {
-    text-decoration: none;
-}
 
-.location {
-    text-align: center;
-}
 
-#landing_page {
-    /*display:none;*/
-    width:50vw;
-    /*background:rgba(0,0,0,0.7);*/
-    margin:0 auto;
-    padding:2em;
-    padding-top:4em;
-}
+
+
 
 video#bgvid { 
-    opacity: 0.5;
+    /*display:none;*/
+    opacity: 0.7;
     position: fixed; right: 0; bottom: 0; 
     min-width: 100%; min-height: 100%; 
     width: auto; height: auto; z-index: -100; 
-/*  background: url(LRAD-Exploration-04.jpg) no-repeat; */
-    background-size: cover; 
+
 }
 
 /*
@@ -171,13 +289,16 @@ html {
     padding:0;
     line-height: 1.4;
     background-color:black;
+    /*background: url("../media/background.png") no-repeat; */
+    background-size: cover; 
 }
 
 body {
     padding:0;
     margin:0;    
-   font-family:  "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-   font-weight: 300;
+    font-family:  "Fugue", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300;
+    text-shadow:1px 1px 3px rgb(0,0,0);
 
 }
 
