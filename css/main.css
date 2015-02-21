@@ -41,6 +41,18 @@
   font-weight:  400;
 }
 
+@font-face {
+  font-family: 'TasseMed';
+  src: url('../fonts/Tasse-Medium.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Tasse-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Tasse-Medium.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/Tasse-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Tasse-Medium.svg#e117a1770fb19069a4c40658bef25b95') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+
 
 input {
     -webkit-appearance: none;
@@ -68,8 +80,8 @@ input {
         width:100%;
         font-weight:500;
         font-size: 0.5em;
-        letter-spacing: 0.2em;
-        color:rgba(255,255,255,0.7);
+        letter-spacing: 0.5em;
+        color:rgba(255,255,255,1.0);
     }
     .date span {
         position:relative;
@@ -136,6 +148,7 @@ input {
         padding:0;
         padding-left:10px;
         padding-right:10px;
+        padding-bottom:10px;
         margin:0;
 
         letter-spacing: 0.1em;
@@ -143,6 +156,19 @@ input {
         font-weight:400;
         /*text-decoration: underline;*/
     }
+	.performers li a {
+	     padding: .4em;
+	}
+    .performers li a:link, .performers li a:visited {
+		  text-shadow: inherit;
+		  border: 1px solid transparent;
+	 }
+    .performers li a:hover, .performers li a:active{
+	     background-color: #fff;
+		  color: #000;
+		  text-shadow: none;
+		  //border: 1px solid;
+	 }
 
 
     /* CTA */
@@ -171,6 +197,7 @@ input {
         font-family: 'fugue_mono';
         text-transform: uppercase;
         font-weight: 500;
+		  letter-spacing: .1em;
 
     }
 
@@ -208,25 +235,46 @@ input {
 		  line-height: 1.6em;
     }
     .hosts h2 {
-        opacity:0.8;
+        // opacity:0.8; // I dunno about this opacity
         font-family: 'fugue_mono';
         text-transform: uppercase;
         font-size: 0.8em !important;
-        line-height: 1.2em;   
+        line-height: 2.6em;   
         margin:0;
         padding:0;
+		  letter-spacing: .72em;
     }
 
 
     /* LOCATION */
     .location {
-        font:0.5em/1.8em 'fugue_mono';
-        letter-spacing: 0.2em;
         margin:0 auto;
-        font-weight: 400;
-        text-transform: uppercase;
         text-align: center;
-    }
+    } 
+    .location h2 {
+        font-family: 'fugue_mono';
+        text-transform: uppercase;
+        font-size: 0.8em !important;
+        line-height: 2.6em;   
+        margin:0;
+        padding:0;
+		  letter-spacing: .72em;
+    } 
+    .location p {
+        text-transform: uppercase;
+        font:0.8em/1.8em 'fugue_mono';
+        letter-spacing: 0.2em;
+        font-weight: 400;
+		  margin-top: 0;
+		  margin-bottom: 0;
+	 }
+	 .location .allgold-logo {
+	     font-family: 'TasseMed';
+		  font-size: 2.4em;
+		  line-height: 1.0em;
+		  display: block;
+		  letter-spacing: 0.08em;
+	 }
 }
 
 @media only screen and (min-width: 641px) {
@@ -321,7 +369,7 @@ body {
     margin:0;    
     font-family:  "Fugue", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
     font-weight: 300;
-    text-shadow:1px 1px 3px rgb(0,0,0);
+    text-shadow:1px 1px 2px rgb(0,0,0);
 
 }
 
