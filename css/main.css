@@ -196,15 +196,16 @@ input {
         width:66%;
         text-align: center;
         font-family: 'fugue';
-        letter-spacing: 0.05em;
+		  letter-spacing: .08em;
         text-transform: uppercase;
-        font-size: 0.8em;
+        font-size: 0.9em;
         line-height: 1.2em;
     }
     .hosts ul {padding:0;margin:0;}
     .hosts li {
         list-style: none;
         margin:0;padding:0;
+		  line-height: 1.6em;
     }
     .hosts h2 {
         opacity:0.8;
