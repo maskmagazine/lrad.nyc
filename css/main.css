@@ -232,7 +232,8 @@ input {
     .hosts li {
         list-style: none;
         margin:0;padding:0;
-		  line-height: 1.6em;
+		  line-height: 1.8em;
+		  letter-spacing: .1em;
     }
     .hosts h2 {
         // opacity:0.8; // I dunno about this opacity
